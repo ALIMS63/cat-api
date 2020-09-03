@@ -3,7 +3,6 @@ document.addEventListener('click', async e => {
 
   if (e.target.className === 'btn btn-info btn-block') {
     console.log('Yeah');
-    // https://api.thecatapi.com/v1/images/search
     const template = await fetch('https://api.thecatapi.com/v1/images/search');
 
 
@@ -20,25 +19,5 @@ document.addEventListener('click', async e => {
 
     let div = document.getElementById('forImg');
     div.innerHTML = html;
-    // let inputValue = document.getElementById('myInput').value;
-    // document.getElementById('myInput').value = ''
-
-    // const template = await fetch('/posts', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ content: inputValue })
-    // });
-    // const fromBack = await template.json();
-
-
-    // const toHbs = await fetch('/hbs/li.hbs');
-    // const fromHbs = await toHbs.text();
-
-    // const func = Handlebars.compile(fromHbs)
-    // const html = func(fromBack);
-
-    // let UL = document.getElementById('myUL');
-    // UL.innerHTML += html;
-
   };
 })
